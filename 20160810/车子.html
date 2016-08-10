@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>车子</title>
+	<style type="text/css">
+		body{
+			background: lightblue;
+		}
+		.tiankong{
+			width: 1500px;
+			height:700px;
+			background: blue;
+			border:1px solid blue;
+			overflow: hidden;
+			position: relative;
+			z-index: 0
+			
+		}
+		.taiyang{
+			width: 150px;
+			height: 150px;
+			background: gold;
+			border-radius: 50%;
+			float: right;
+			box-shadow: -10px 10px  25px yellow,
+						10px -10px 10px yellow,
+						-10px -10px 10px yellow,
+						10px 10px 10px yellow;
+		}
+		.tiankong .shan{
+			width: 300px;
+			height: 300px;
+			background: brown;
+			transform: rotateZ(45deg);
+			transform-origin: 200px 200px;
+			border-top-left-radius: 25px; 
+			margin-top: 570px;
+			position: relative;
+			z-index: 5;
+		}
+		.shan2{
+			width: 500px;
+			height: 500px;
+			background: #B89797;
+			transform: rotateZ(45deg);
+			transform-origin: 200px 200px;
+			border-top-left-radius: 25px; 
+			margin-top: -400px;
+			margin-left: 300px;
+			position: relative;
+			z-index: 4;
+		}
+		.shan3{
+			width: 800px;
+			height: 800px;
+			background: darkgrey;
+			transform: rotateZ(45deg);
+			transform-origin: 200px 200px;
+			border-top-left-radius: 100px; 
+			margin-top: -700px;
+			margin-left: 800px;
+			z-index: 1;
+		}
+		.grass{
+			width: 1500px;
+			height: 1500px;
+			background: lightgreen;
+			transform: rotateZ(45deg);
+			position: relative;
+			margin-top: -500px;
+			margin-left: 450px;
+			border-radius: 50%;
+			z-index: 2;
+		}
+		.xiaocao{
+			width: 100vw;
+			height: 15px;
+			background: green;
+			margin-top: -2px;
+		}
+		.hulan{
+			background: lightgrey;
+			width: 1500px;
+			height: 10px;
+		}
+		.renxingdao{
+			background: #B89797;
+			width: 1500px;
+			height: 5px;
+		}
+		.malu{
+			width: 1500px;
+			height: 150px;
+			background: grey;
+		}
+		.malu .banmaxian{
+			background: white;
+			width: 100px;
+			height: 5px;
+			float: left;
+			margin-left: 50px;
+			margin-top: 72px;
+		}
+		.xiaoqiche{
+			float: left;
+			animation-name: run;
+			animation-play-state: running;
+			animation: run 10s;
+			animation-timing-function: linear;
+		}
+		
+		@-webkit-keyframes run{
+				0%{
+					margin-top: 0px;
+					margin-left: 0px;
+				}
+				20%{
+					margin-left: 300px;
+					margin-top:-75px; 
+				}
+				40%{
+					margin-top: 20px;
+					margin-left: 600px;
+				}
+				60%{
+					margin-top:-75px;
+					margin-left: 900px;
+				}
+				80%{margin-left: 1200px;
+					margin-top: 20px;
+				}
+				100%{margin-top: -75px;
+					margin-left: 1500px;
+				}
+			}
+		.l{
+			/*animation-name: lunzi;*/
+			-webkit-animation: lunzi infinite linear 3s;
+		}
+		@-webkit-keyframes lunzi{
+			0%{transform: rotateZ(0deg);}
+			100%{transform: rotateZ(3600deg);}
+		}
+		.xiaoqiche .car{
+			width: 120px;
+		}
+		.xiaoqiche .lun1{
+			width: 25px;
+			margin-left: -115px;
+			transform: rotateZ(360deg);
+		}
+		.xiaoqiche .lun2{
+			width: 25px;
+			margin-left: 45px;
+			transform: rotateZ(360deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="tiankong">
+		<div class="taiyang"></div>
+		<div class="shan"></div>
+		<div class="shan2"></div>
+		<div class="shan3"></div>
+		<div class="grass"></div>
+	</div>
+	<div class="xiaocao">
+		<div class="x1"></div>
+	</div>
+	<div class="hulan"></div>
+	<div class="renxingdao"></div>
+	<div class="malu">
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<div class="banmaxian"></div>
+		<!-- <div class="che">
+			
+		</div> -->
+		<div class="xiaoqiche">
+			<img src="img/che.png" class="car">
+			<img src="img/lun.png" class="l lun1">
+			<img src="img/lun.png" class="l lun2">
+		</div>
+	</div>
+</body>
+</html>
